@@ -1,6 +1,5 @@
 # LumberChunker 🪵🪓
-This is the official anonymous repository for the paper LumberChunker: Long-Form Narrative Document Segmentation.<br>
-
+This is the official repository for the paper LumberChunker: Long-Form Narrative Document Segmentation by André V. Duarte, João Marques, Miguel Graça, Miguel Freire, Lei Li and Arlindo L. Oliveira<br>
 
 LumberChunker is a method leveraging an LLM to dynamically segment documents into semantically independent chunks. It iteratively prompts the LLM to identify the point within a group of sequential passages where the content begins to shift.
 
@@ -31,7 +30,7 @@ We also release the same corpus present on GutenQA with different chunk granular
 - Paragraph: Books are extracted manually from Project Gutenberg. This is the format of the extraction prior to segmentation with LumberChunker.
 - Recursive Chunks: Documents are segmented based on a hierarchy of separators such as paragraph breaks, new lines, spaces, and individual characters, using Langchain's [RecursiveCharacterTextSplitter](https://api.python.langchain.com/en/latest/character/langchain_text_splitters.character.RecursiveCharacterTextSplitter.html) function.
 - Semantic Chunks: Paragraph Chunks are embedded with OpenAI's text-ada-embedding-002. Text is segmented by identifying break points based on significant changes in adjacent chunks embedding distances.
-- Propositions: Included on the GutenQA data files as one of the columns. 
+- Propositions: Text is segmented as introduced in the paper [Dense X Retrieval](https://arxiv.org/abs/2312.06648). Generated questions are provided along with the correct Proposition Answer.
 
 
 ---
