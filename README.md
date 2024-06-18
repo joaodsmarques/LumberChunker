@@ -25,12 +25,12 @@ The GutenQA benchmark consists of books manually extracted from Project Gutenber
 
 
 ---
-### 📖 Project Gutenberg Books - Chunks for Baseline Methods
+### 📖 GutenQA Alternative Chunking Formats (Used for Baseline Methods)
 We also release the same corpus present on GutenQA with different chunk granularities.
-- Paragraph: Books are extracted manually from Project Gutenberg. This is the format of the extraction prior to segmentation with LumberChunker.
-- Recursive Chunks: Documents are segmented based on a hierarchy of separators such as paragraph breaks, new lines, spaces, and individual characters, using Langchain's [RecursiveCharacterTextSplitter](https://api.python.langchain.com/en/latest/character/langchain_text_splitters.character.RecursiveCharacterTextSplitter.html) function.
-- Semantic Chunks: Paragraph Chunks are embedded with OpenAI's text-ada-embedding-002. Text is segmented by identifying break points based on significant changes in adjacent chunks embedding distances.
-- Propositions: Text is segmented as introduced in the paper [Dense X Retrieval](https://arxiv.org/abs/2312.06648). Generated questions are provided along with the correct Proposition Answer.
+- [Paragraph](https://huggingface.co/datasets/LumberChunker/GutenQA_Paragraphs): Books are extracted manually from Project Gutenberg. This is the format of the extraction prior to segmentation with LumberChunker.
+- [Recursive Chunks](https://huggingface.co/datasets/LumberChunker/GutenQA_Recursive): Documents are segmented based on a hierarchy of separators such as paragraph breaks, new lines, spaces, and individual characters, using Langchain's [RecursiveCharacterTextSplitter](https://api.python.langchain.com/en/latest/character/langchain_text_splitters.character.RecursiveCharacterTextSplitter.html) function.
+- [Semantic Chunks](https://huggingface.co/datasets/LumberChunker/GutenQA_Semantic): Paragraph Chunks are embedded with OpenAI's text-ada-embedding-002. Text is segmented by identifying break points based on significant changes in adjacent chunks embedding distances.
+- [Propositions](https://huggingface.co/datasets/LumberChunker/GutenQA_Propositions): Text is segmented as introduced in the paper [Dense X Retrieval](https://arxiv.org/abs/2312.06648). Generated questions are provided along with the correct Proposition Answer.
 
 
 ---
