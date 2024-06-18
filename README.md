@@ -17,7 +17,7 @@ Alternatively, run the Jupyter Notebook version (Code/LumberChunker-Segmentation
 
 ---
 
-### 📚 GutenQA
+### 📚 [GutenQA](https://huggingface.co/datasets/LumberChunker/GutenQA)
 The GutenQA benchmark consists of books manually extracted from Project Gutenberg and subsequently segmented with LumberChunker.
 - 100 Public Domain Narrative Books.
 - 30 Question-Answer Pairs per Book.
