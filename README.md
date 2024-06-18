@@ -18,10 +18,19 @@ Alternatively, run the Jupyter Notebook version (Code/LumberChunker-Segmentation
 ---
 
 ### 📚 [GutenQA](https://huggingface.co/datasets/LumberChunker/GutenQA)
-The GutenQA benchmark consists of books manually extracted from Project Gutenberg and subsequently segmented with LumberChunker.
-- 100 Public Domain Narrative Books.
-- 30 Question-Answer Pairs per Book.
-- QA Pairs also have the `Chunk Must Contain` column &rarr; Substring of the LumberChunker chunk where the answer is present. Rationale is that despite the chunking methodology used, the retrieved chunk should contain this string.
+GutenQA consists of book passages manually extracted from Project Gutenberg and subsequently segmented using [LumberChunker](https://github.com/joaodsmarques/LumberChunker).
+- **100 Public Domain Narrative Books**
+- **30 Question-Answer Pairs per Book**
+
+The dataset is organized into the following columns:
+- `Book Name`: The title of the book from which the passage is extracted.
+- `Book ID`: A unique integer identifier assigned to each book.
+- `Chunk ID`: An integer identifier for each chunk of the book. Chunks are listed in the sequence they appear in the book.
+- `Chapter`: The name(s) of the chapter(s) from which the chunk is derived. If LumberChunker merged paragraphs from multiple chapters, the names of all relevant chapters are included.
+- `Question`: A question pertaining to the specific chunk of text. Note that not every chunk has an associated question, as only 30 questions are generated per book.
+- `Answer`: The answer corresponding to the question related to that chunk.
+- `Chunk Must Contain`: A specific substring from the chunk indicating where the answer can be found. This ensures that, despite the chunking methodology, the correct chunk includes this particular string.
+
 
 
 ---
