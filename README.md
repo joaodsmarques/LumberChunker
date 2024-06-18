@@ -18,9 +18,8 @@ Alternatively, run the Jupyter Notebook version (Code/LumberChunker-Segmentation
 ---
 
 ### 📚 [GutenQA](https://huggingface.co/datasets/LumberChunker/GutenQA)
-GutenQA consists of book passages manually extracted from Project Gutenberg and subsequently segmented using [LumberChunker](https://github.com/joaodsmarques/LumberChunker).
-- **100 Public Domain Narrative Books**
-- **30 Question-Answer Pairs per Book**
+GutenQA consists of book passages manually extracted from Project Gutenberg and subsequently segmented using LumberChunker.<br>
+It features: **100 Public Domain Narrative Books** and **30 Question-Answer Pairs** per Book.<br>
 
 The dataset is organized into the following columns:
 - `Book Name`: The title of the book from which the passage is extracted.
