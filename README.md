@@ -1,5 +1,5 @@
 # LumberChunker 🪓
-This is the official repository for the paper LumberChunker: Long-Form Narrative Document Segmentation by André V. Duarte, João Marques, Miguel Graça, Miguel Freire, Lei Li and Arlindo L. Oliveira<br>
+This is the official repository for the paper LumberChunker: Long-Form Narrative Document Segmentation by André V. Duarte, João D.S. Marques, Miguel Graça, Miguel Freire, Lei Li and Arlindo L. Oliveira<br>
 
 LumberChunker is a method leveraging an LLM to dynamically segment documents into semantically independent chunks. It iteratively prompts the LLM to identify the point within a group of sequential passages where the content begins to shift.
 
