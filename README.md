@@ -11,7 +11,7 @@ LumberChunker is a method leveraging an LLM to dynamically segment documents int
 ⚠ Important: Whether using Gemini or ChatGPT, don't forget to add the API key / (Project ID, Location) in LumberChunker-Segmentation.py<br>
 
 ```
-python LumberChunker-Segmentation.py --in_path <input directory path> --out_path <output directory path> --model_type <Gemini | ChatGPT> --book_name <target book name>
+python LumberChunker-Segmentation.py --out_path <output directory path> --model_type <Gemini | ChatGPT> --book_name <target book name>
 ```
 Alternatively, run the Jupyter Notebook version (Code/LumberChunker-Segmentation.ipynb)
 
