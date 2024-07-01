@@ -51,12 +51,13 @@ LumberChunker is compatible with any LLM with strong reasoning capabilities.<br>
 If you find this work useful, please consider citing our paper:
 
 ```bibtex
-@misc{LumberChunker,
-      title={{LumberChunker: Long-Form Narrative Document Segmentation}}, 
-      author={xxxx, yyyy, zzzz, wwww},
+@misc{duarte2024lumberchunker,
+      title={LumberChunker: Long-Form Narrative Document Segmentation}, 
+      author={André V. Duarte and João Marques and Miguel Graça and Miguel Freire and Lei Li and Arlindo L. Oliveira},
       year={2024},
-      eprint={},
+      eprint={2406.17526},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.17526}, 
 }
 ```
