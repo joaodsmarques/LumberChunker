@@ -2,6 +2,9 @@
 This is the official repository for the paper [LumberChunker: Long-Form Narrative Document Segmentation](
 https://doi.org/10.48550/arXiv.2406.17526) by André V. Duarte, João D.S. Marques, Miguel Graça, Miguel Freire, Lei Li and Arlindo L. Oliveira<br>
 
+**Quick links:**  
+[Paper](https://doi.org/10.48550/arXiv.2406.17526) | [Blog Post](https://avduarte333.github.io/projects/lumberchunker/) | [GutenQA Dataset](https://huggingface.co/datasets/LumberChunker/GutenQA)
+
 LumberChunker is a method leveraging an LLM to dynamically segment documents into semantically independent chunks. It iteratively prompts the LLM to identify the point within a group of sequential passages where the content begins to shift.
 
 ![GitHub Logo](LumberChunker_pipeline.png)
@@ -52,13 +55,19 @@ LumberChunker is compatible with any LLM with strong reasoning capabilities.<br>
 If you find this work useful, please consider citing our paper:
 
 ```bibtex
-@misc{duarte2024lumberchunker,
-      title={LumberChunker: Long-Form Narrative Document Segmentation}, 
-      author={André V. Duarte and João Marques and Miguel Graça and Miguel Freire and Lei Li and Arlindo L. Oliveira},
-      year={2024},
-      eprint={2406.17526},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.17526}, 
+@inproceedings{duarte-etal-2024-lumberchunker,
+    title = "{L}umber{C}hunker: Long-Form Narrative Document Segmentation",
+    author = "Duarte, Andr{\'e} V.  and Marques, Jo{\~a}o DS  and Gra{\c{c}}a, Miguel  and Freire, Miguel  and Li, Lei  and Oliveira, Arlindo L.",
+    editor = "Al-Onaizan, Yaser  and Bansal, Mohit  and Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.377/",
+    doi = "10.18653/v1/2024.findings-emnlp.377",
+    pages = "6473--6486"
 }
 ```
+
+
